@@ -9,7 +9,6 @@ public class jumpScare : MonoBehaviour
     public GameObject jumpScareImg;
     public GameObject current;
     public AudioSource audio;
-    public AudioSource audio2;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +24,6 @@ public class jumpScare : MonoBehaviour
             jumpScareTemp.SetActive(true);
             jumpScareImg.SetActive(true);
             audio.Play();
-            audio2.Play();
             Debug.Log(jumpScareTemp.layer); 
             StartCoroutine(disableImage());     
         }
