@@ -7,7 +7,7 @@ public class playerMovement : MonoBehaviour
 {
     private float dirX = 0f, dirY = 0f;
     private Rigidbody2D player;
-    public float SPEED ;
+    public float SPEED = 4f ;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,8 +20,6 @@ public class playerMovement : MonoBehaviour
         dirY = Input.GetAxisRaw("Vertical");
         dirX = Input.GetAxisRaw("Horizontal");
 
-        player.position += new Vector2(dirX/SPEED, dirY/SPEED); 
-
-        //player.velocity = new Vector2(dirX*SPEED, dirY*SPEED);
+        player.velocity = new Vector2(dirX*SPEED, dirY*SPEED);
     }
 }
