@@ -155,9 +155,9 @@ MonoBehaviour:
   m_ComponentVersion: 1
   m_LightType: 3
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.5
+  m_FalloffIntensity: 0.987
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2
+  m_Intensity: 1.1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 8991e8e9000000000fef74fb
@@ -179,7 +179,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 1.5
+  m_PointLightOuterRadius: 4
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
@@ -476,7 +476,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 891eec3edee770b46a2376e148dffd42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpScareImg: {fileID: 0}
 --- !u!114 &631873105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3399,6 +3398,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b23064890f29b848b31fceb7bb1263a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SPEED: 11.5
 --- !u!50 &988647004
 Rigidbody2D:
   serializedVersion: 4
@@ -3488,7 +3488,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.3567708, y: 1.2915559, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 251175606}
@@ -7689,7 +7689,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 891eec3edee770b46a2376e148dffd42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpScareImg: {fileID: 631873102}
 --- !u!61 &1101844008
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7813,8 +7812,8 @@ Transform:
   m_GameObject: {fileID: 1283715978}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.26, y: -11.54, z: 0}
-  m_LocalScale: {x: 52.233078, y: 49.28888, z: 1.959375}
+  m_LocalPosition: {x: 12.5503, y: -20.0503, z: 0}
+  m_LocalScale: {x: 64.02973, y: 59.820683, z: 1.959375}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
