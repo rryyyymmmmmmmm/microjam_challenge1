@@ -7,7 +7,7 @@ public class playerMovement : MonoBehaviour
 {
     private float dirX = 0f, dirY = 0f;
     private Rigidbody2D player;
-    private const float SPEED = 50f;
+    public float SPEED ;
     // Start is called before the first frame update
     void Start()
     {
