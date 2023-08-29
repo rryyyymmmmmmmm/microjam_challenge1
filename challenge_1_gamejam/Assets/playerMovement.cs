@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class playerMovement : MonoBehaviour
@@ -8,18 +9,22 @@ public class playerMovement : MonoBehaviour
     private float dirX = 0f, dirY = 0f;
     private Rigidbody2D player;
     public float SPEED = 4f ;
+    public bool canMove;
     // Start is called before the first frame update
     void Start()
     {
         player = GetComponent<Rigidbody2D>();
+        canMove = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        dirY = Input.GetAxisRaw("Vertical");
-        dirX = Input.GetAxisRaw("Horizontal");
-
-        player.velocity = new Vector2(dirX*SPEED, dirY*SPEED);
+        if(canMove == true) {
+            dirY = Input.GetAxisRaw("Vertical");
+            dirX = Input.GetAxisRaw("Horizontal");
+            player.velocity = new Vector2(dirX*SPEED, dirY*SPEED);
+    
+        }
     }
 }
